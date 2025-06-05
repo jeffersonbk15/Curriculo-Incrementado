@@ -136,3 +136,11 @@ section:hover {
     transform: translateY(-3px);
     transition: 0.3s;
 }
+@media (max-width: 768px) {
+    .destaque {
+        flex-direction: column;
+    }
+    .foto-perfil {
+        margin-bottom: 15px;
+    }
+}
