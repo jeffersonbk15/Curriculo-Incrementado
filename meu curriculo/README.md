@@ -1,7 +1,18 @@
-# curriculo-online
-Meu portfólio de projetos em HTML, CSS e JS
+# 📄 Currículo Online Interativo  
 
-Olá! Sou Jefferson Bahia de Souza, estudante de desenvolvimento web.
+Um currículo digital moderno com **dark mode**, efeitos visuais e formulário de contato.  
 
-##projetos
-https://github.com/jeffersonbk15/curriculo-online
+🔗 **Acesse aqui**: [https://jeffersonbk15.github.io/curriculo-online/](https://jeffersonbk15.github.io/curriculo-online/)  
+
+## 🛠️ Tecnologias  
+- HTML5  
+- CSS3 (Flexbox, Grid, animações)  
+- JavaScript (DOM manipulation, eventos)  
+
+## ✨ Features  
+- ✅ Alternar entre light/dark mode  
+- ✅ Formulário de contato (simulado)  
+- ✅ Layout responsivo  
+
+## 📸 Preview
+<img src="preview.png" alt="Descrição" width="400" />
