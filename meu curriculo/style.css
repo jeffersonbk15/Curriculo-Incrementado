@@ -1,117 +1,100 @@
-/* Reset e Configurações Globais */
+:root {
+    --cor-primaria: #00abf0;
+    --cor-fundo: #081b29;
+    --cor-texto: #ededed;
+    --cor-destaque: #ff6b6b;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     line-height: 1.6;
-    color: #333;
-    background: #f8f9fa;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
-/* Navegação */
-nav {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-nav ul {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background: var(--cor-fundo);
     display: flex;
-    gap: 20px;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-nav a {
-    color: #3498db;
+.navbar a {
+    color: var(--cor-texto);
+    text-decoration: none;
     font-weight: 500;
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--cor-primaria);
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-content h1 span {
+    color: var(--cor-primaria);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--cor-primaria);
+    color: var(--cor-fundo);
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: 600;
 }
 
-nav a:hover {
-    color: #2980b9;
-}
-
-/* Cabeçalho */
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-h1 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-/* Seções */
 section {
-    background: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    padding: 5rem 10%;
 }
 
-h2 {
-    color: #00cec9;
-    border-left: 4px solid #00cec9;
-    padding-left: 10px;
-    margin-bottom: 15px;
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-/* Rodapé */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    color: #7f8c8d;
-    font-size: 0.9em;
-}
-
-/* Links */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.heading span {
+    color: var(--cor-primaria);
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
-    body {
-        padding: 15px;
-    }
-    
-    nav ul {
+@media (max-width: 768px) {
+    .home {
         flex-direction: column;
-        gap: 10px;
+        text-align: center;
     }
-}
-/* Efeito suave nos links */
-a, .btn {
-    transition: all 0.3s ease;
-}
 
-a:hover, .btn:hover {
-    opacity: 0.8;
-    transform: translateY(-2px);
-}
+    .home-content h1 {
+        font-size: 2rem;
+    }
 
-  /* Sombra nos cards de habilidades */
-.habilidade {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.habilidade:hover {
-    transform: scale(1.05);
+    .navbar {
+        display: none; /* Substituir por menu hamburguer depois */
+    }
 }

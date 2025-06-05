@@ -1,63 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta name="description" content="Currículo online de Jefferson - Estudante de desenvolvimento web na EBAC">
-    <meta name="keywords" content="frontend, desenvolvedor web, HTML, CSS, JavaScript, portfolio">
-    <title>Jefferson Bahia de Souza| Desenvolvedor Web</title>  
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Currículo online de Jefferson - Estudante de desenvolvimento web">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Jefferson - Desenvolvedor Front-End</title>
     <link rel="stylesheet" href="style.css">
-    <title>Currículo Jefferson</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <h1>Jefferson Bahia de Souza</h1>
-        <p>Desenvolvedor Front-End em Formação</p>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">Jefferson</a>
+            <ul class="nav-list">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Estudante dedicado de desenvolvimento web com foco em HTML, CSS e JavaScript. Busco minha primeira oportunidade profissional na área de tecnologia.</p>
-    </section>
+    <main>
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Olá, eu sou <span>Jefferson</span></h1>
+                <p>Desenvolvedor Front-End</p>
+                <div class="btn-box">
+                    <a href="#contato" class="btn">Contato</a>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="images/foto-perfil.jpg" alt="Foto de Jefferson">
+            </div>
+        </section>
 
-    <section id="formacao">
-        <h2>Formação</h2>
-        <ul>
-            <li><strong>EBAC</strong> - Curso Programador FullStack (Cursando)</li>
-            <li><strong>Outros Cursos</strong> - Inglês (Cursando)</li>
-        </ul>
-    </section>
+        <section id="sobre" class="sobre">
+            <h2 class="heading">Sobre <span>Mim</span></h2>
+            <p>Sou um desenvolvedor apaixonado por criar soluções web responsivas e acessíveis.</p>
+        </section>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript (Básico)</li>
-            <li>Git e GitHub</li>
-        </ul>
-    </section>
+        <section id="experiencias" class="experiencias">
+            <h2 class="heading">Minhas <span>Experiências</span></h2>
+            <div class="experiencia-item">
+                <h3>Desenvolvedor Front-End</h3>
+                <p class="empresa">Empresa X (2022-2023)</p>
+                <ul class="realizacoes">
+                    <li>Desenvolvi um sistema de dashboard que aumentou a eficiência da equipe em 30%</li>
+                    <li>Implementação de designs responsivos com CSS moderno</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: <a href="mailto:jeffersonbk15@gmail.com">jeffersonbk15@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/jeffersonbk15" target="_blank">jeffersonbk15</a></p>
-    </section>
+        <section id="habilidades" class="habilidades">
+            <h2 class="heading">Minhas <span>Habilidades</span></h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+    </main>
 
-    <footer>
-        <p>Portfólio online - Jefferson Bahia de Souza © 2025</p>
+    <footer id="contato" class="footer">
+        <div class="social-links">
+            <a href="https://github.com/jeffersonbk15" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/seu-linkedin" target="_blank">LinkedIn</a>
+        </div>
+        <p class="copyright">© 2024 Jefferson. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
