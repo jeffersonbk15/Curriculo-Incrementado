@@ -144,3 +144,7 @@ section:hover {
         margin-bottom: 15px;
     }
 }
+.sobre {  
+    min-height: 120px; /* Altura mínima */  
+    padding: 20px; /* Espaçamento interno */  
+}  
