@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="icon" href="favicon.ico" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jefferson - Desenvolvedor Front-End</title>
+    <title>Meu Currículo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="#home" class="logo">Jefferson</a>
-            <ul class="nav-list">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiencias">Experiências</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Jefferson Bahia de Souza</h1>
+            <h2>Desenvolvedor Front-End</h2>
+        </header>
 
-    <main>
-        <section id="home" class="home">
-            <div class="home-content">
-                <h1>Olá, eu sou <span>Jefferson</span></h1>
-                <p>Desenvolvedor Front-End</p>
-                <div class="btn-box">
-                    <a href="#contato" class="btn">Contato</a>
-                </div>
+        <section class="destaque">
+            <div class="foto-perfil">
+                <img src="sua-foto.jpg" alt="Foto de Perfil">
             </div>
-            <div class="home-img">
-                <img src="images/foto-perfil.jpg" alt="Foto de Jefferson">
+            <div class="contato">
+                <p>📧 jeffersonbk15@gmail.com</p>
+                <p>📱 (24) 999463732</p>
+                <p>🌐 https://www.linkedin.com/in/jefferson-bahia-604547162/</p>
             </div>
         </section>
 
-        <section id="sobre" class="sobre">
-            <h2 class="heading">Sobre <span>Mim</span></h2>
-            <p>Sou um desenvolvedor apaixonado por criar soluções web responsivas e acessíveis.</p>
+        <section class="sobre">
+            <h3>Sobre Mim</h3>
+            <p>Sou um estudante dedicado de programação, focado em HTML, CSS e JavaScript. Busco minha primeira oportunidade na área!</p>
         </section>
 
-        <section id="experiencias" class="experiencias">
-            <h2 class="heading">Minhas <span>Experiências</span></h2>
-            <div class="experiencia-item">
-                <h3>Desenvolvedor Front-End</h3>
-                <p class="empresa">Empresa X (2022-2023)</p>
-                <ul class="realizacoes">
-                    <li>Desenvolvi um sistema de dashboard que aumentou a eficiência da equipe em 30%</li>
-                    <li>Implementação de designs responsivos com CSS moderno</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="habilidades" class="habilidades">
-            <h2 class="heading">Minhas <span>Habilidades</span></h2>
-            <ul class="skills-list">
+        <section class="habilidades">
+            <h3>Habilidades</h3>
+            <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Git</li>
+                <li>JavaScript Básico</li>
+                <li>Git e GitHub</li>
             </ul>
         </section>
-    </main>
 
-    <footer id="contato" class="footer">
-        <div class="social-links">
-            <a href="https://github.com/jeffersonbk15" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/seu-linkedin" target="_blank">LinkedIn</a>
-        </div>
-        <p class="copyright">© 2024 Jefferson. Todos os direitos reservados.</p>
-    </footer>
+        <section class="projetos">
+            <h3>Projetos</h3>
+            <div class="projeto">
+                <h4>Site Pessoal</h4>
+                <p>Um site simples feito com HTML/CSS para praticar.</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
